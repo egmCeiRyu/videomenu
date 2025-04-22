@@ -1,0 +1,46 @@
+<!-- video.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playing Video</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    video {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="player" controls autoplay>
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    // Get the video file from the URL query string
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoSrc = urlParams.get('video');
+
+    // Set the video source
+    const player = document.getElementById('player');
+    if (videoSrc) {
+      player.src = videoSrc;
+    }
+
+    // Redirect to menu (index.html) when video ends
+    player.addEventListener('ended', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Thumbnails</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      background-color: #f4f4f4;
+      width: 1000px;
+        margin:auto;
+    }
+
+    .thumbnail {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+   <div>
+  <!-- Replace the image src and href with your own video thumbnail and video links -->
+<button class="thumbnail" onclick="location.href='video.html?video=movies/movie1.mp4'">
+  <img src="images/image1.jpg" alt="Video 1">
+</button>
+    </div>
+
+  <div>
+<button class="thumbnail" onclick="location.href='video.html?video=movies/movie2.mp4'">
+  <img src="images/image2.jpg" alt="Video 1">
+</button>
+    </div>
+
+    <div>
+<button class="thumbnail" onclick="location.href='video.html?video=movies/movie3.mp4'">
+  <img src="images/image3.jpg" alt="Video 1">
+</button>
+    </div>
+    
+    <div>
+<button class="thumbnail" onclick="location.href='video.html?video=movies/movie4.mp4'">
+  <img src="images/image4.jpg" alt="Video 1">
+</button>
+    </div>
+    
+    <div>
+<button class="thumbnail" onclick="location.href='video.html?video=movies/movie5.mp4'">
+  <img src="images/image5.jpg" alt="Video 1">
+</button>
+    </div>
+    
+    <div>
+<button class="thumbnail" onclick="location.href='video.html?video=movies/movie6.mp4'">
+  <img src="images/image6.jpg" alt="Video 1">
+</button>
+    </div>
+    
+    <div>
+<button class="thumbnail" onclick="location.href='video.html?video=movies/movie7.mp4'">
+  <img src="images/image7.jpg" alt="Video 1">
+</button>
+    </div>
+
+</body>
+</html>
